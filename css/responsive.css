@@ -130,4 +130,9 @@
         width: 85%;
     }
 
+/* ================ TEAM PART ================*/
+    #team .team_main .team_body{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
