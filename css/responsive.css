@@ -112,4 +112,22 @@
         grid-row: 3;
     }
 
+/* ================ BMI CALCULATOR PART ================*/
+    #bmi_body .bmi_main{
+        flex-direction: column;
+    }
+
+    #bmi_body .bmi_main .bmi_chart{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #bmi_body .bmi_main .bmi_calculation_form{
+        width: 100%;
+    }
+
+    #bmi_body .bmi_main .bmi_chart table{
+        width: 85%;
+    }
+
 }

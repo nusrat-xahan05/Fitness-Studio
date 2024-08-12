@@ -489,4 +489,111 @@ section{
 }
 /* ====================================================
              'TRAINING & EXCERCISE' PART END
+==================================================== */
+
+
+
+/* ====================================================
+                'BMI CALCULATOR' PART START
+ ==================================================== */
+ #bmi_body{
+    background-color: var(--secondary-background-color);
+}
+
+#bmi_body .bmi_main{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bmi_body .bmi_main .title{
+    margin-bottom: 40px;
+}
+
+#bmi_body .bmi_main h3{
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--primary-text-color);
+}
+
+#bmi_body .bmi_main p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-text-color);
+    margin-top: 11px;
+}
+
+#bmi_body .bmi_main .bmi_chart{
+    width: 30%;
+}
+
+#bmi_body .bmi_main .bmi_chart table{
+    width: 100%;
+}
+
+#bmi_body .bmi_main .bmi_chart table, tr, td, th{
+    border: 1px solid var(--secondary-text-color);
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+#bmi_body .bmi_main .bmi_chart th{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-text-color);
+}
+
+#bmi_body .bmi_main .bmi_chart td{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-text-color);
+}
+
+#bmi_body .bmi_main .bmi_calculation_form{
+    width: 55%;
+}
+
+#bmi_body .bmi_main .bmi_calculation_form .calculation_form form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+#bmi_body .bmi_main .bmi_calculation_form .calculation_form form #last_item{
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+#bmi_body .bmi_main .bmi_calculation_form .calculation_form form input{
+    font-size: 16px;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 13px 20px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+#bmi_body .bmi_main .bmi_calculation_form .calculation_form form input::placeholder{
+    color: rgba(255, 255, 255, .6);
+}
+
+#bmi_body .bmi_main .bmi_calculation_form .calculation_form form select{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .6);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 13px 20px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+/* ====================================================
+                'BMI CALCULATOR' PART END
  ==================================================== */
