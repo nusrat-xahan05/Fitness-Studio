@@ -45,4 +45,30 @@
         right: 10%;
     }
 
+/* ================ HABITS PART ================*/
+    #habits .habits_main .habits_body{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #habits .habits_main .habits_body .habits_body_item .title p{
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+/* ================ JOIN PART ================*/
+    #join .join_main{
+        flex-direction: column;
+    }
+
+    #join .join_main .section_heading{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #join .join_main .join_body{
+        margin-top: 30px;
+        text-align: center;
+        width: 100%;
+    }
+
 }

@@ -154,6 +154,11 @@ section{
     font-weight: 600;
 }
 
+#navbar .navbar_main .navbar_menu ul li#active a{
+    background-color: var(--highlight-color);
+    font-weight: 600;
+}
+
 #navbar .navbar_main .navbar_hambarger{
     display: none;
 }
@@ -294,3 +299,90 @@ section{
 /* ====================================================
                     'BANNER' PART END
  ==================================================== */
+
+
+
+/* ====================================================
+                    'HABITS' PART START
+ ==================================================== */
+ #habits .habits_main .habits_body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+#habits .habits_main .habits_body .habits_body_item{
+    text-align: center;
+}
+
+#habits .habits_main .habits_body .habits_body_item .img img{
+    /* width: 100%; */
+    margin-bottom: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#habits .habits_main .habits_body .habits_body_item .title h5{
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--primary-text-color);
+    margin-bottom: 6px;
+}
+
+#habits .habits_main .habits_body .habits_body_item .title p{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--secondary-text-color);
+}
+/* ====================================================
+                    'HABITS' PART END
+ ==================================================== */
+
+
+
+/* ====================================================
+                 'JOIN NOW' PART START
+ ==================================================== */
+ #join .join_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-background-color);
+    padding: 32px;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+
+#join .join_main .section_heading{
+    text-align: left;
+    width: 40%;
+    margin: 0px 40px;
+}
+
+#join .join_main .join_body{
+    width: 35%;
+    overflow: hidden;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+
+#join .join_main .join_body img{
+    width: 100%;
+    transform: scale(1.8);
+    -webkit-transform: scale(1.8);
+    -moz-transform: scale(1.8);
+    -ms-transform: scale(1.8);
+    -o-transform: scale(1.8);
+}
+/* ====================================================
+                 'JOIN NOW' PART END
+==================================================== */
