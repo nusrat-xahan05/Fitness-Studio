@@ -681,3 +681,62 @@ section{
 /* ====================================================
                     'TEAM' PART END
 ==================================================== */
+
+
+
+/* ====================================================
+                    'FOOTER' PART START
+ ==================================================== */
+ #footer{
+    background-color: var(--secondary-background-color);
+}
+
+#footer .footer_main{
+    padding: 66px 0px;
+    display: grid;
+    grid-template-columns: 450px auto auto;
+    justify-items: end;
+}
+
+#footer .footer_main .footer_item h1{
+    font-weight: 800;
+    font-style: italic;
+    font-size: 70px;
+    color: var(--highlight-color);
+    margin-bottom: 20px;
+}
+
+#footer .footer_main .footer_item p{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--secondary-text-color);
+}
+
+#footer .footer_main .footer_item h2{
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--primary-text-color);
+    margin-bottom: 20px;
+}
+
+#footer .footer_main .footer_item a{
+    font-weight: 400;
+    font-size: 23px;
+    color: var(--secondary-text-color);
+    display: block;
+}
+
+#footer .footer_copyright{
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 35px 0px;
+    text-align: center;
+}
+
+#footer .footer_copyright p{
+    font-weight: 400;
+    font-size: 20;
+    color: var(--secondary-text-color);
+}
+/* ====================================================
+                    'FOOTER' PART END
+ ==================================================== */

@@ -135,4 +135,14 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+/* ================ FOOTER PART ================*/
+    #footer .footer_main{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: start;
+    }
+
+    #footer .footer_main .footer_item h2{
+        margin-top: 30px;
+    }
+
 }
