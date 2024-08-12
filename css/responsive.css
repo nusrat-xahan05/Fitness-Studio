@@ -1,0 +1,48 @@
+@media screen and (max-width: 576px){
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .section_heading{
+        width: fit-content;
+        /* width: 80%; */
+    }
+
+    .button_btn button{
+        padding: 16px 20px;
+    }
+
+/* ================ NAVBAR PART ================*/
+    #navbar .navbar_main .navbar_menu{
+        display: none;
+    }
+
+    #navbar .navbar_main .navbar_hambarger{
+        display: block;
+    }
+
+/* ================ BANNER PART ================*/
+    #banner .banner_main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #banner .banner_main .banner_titles .button_btn:last-child{
+        margin-left: 5px;
+    }
+
+    #banner .banner_main .banner_bg{
+        margin-top: 40px;
+    }
+
+    #banner .banner_main .banner_tutorial{
+        bottom: 20%;
+        left: 5%;
+    }
+
+    #banner .banner_main .banner_workouts{
+        top: 55%;
+        right: 10%;
+    }
+
+}

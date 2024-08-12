@@ -1,0 +1,296 @@
+/* ====================================================
+                'ALL COMMON CSS' PART START
+ ==================================================== */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul, li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+body{
+    background-color: black;
+    font-family: var(--primary-text);
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* all 'section heading' */
+section{
+    margin-top: 100px;
+}
+
+.section_heading{
+    width: 45%;
+    margin: 0 auto 58px;
+    text-align: center;
+}
+
+.section_heading h2{
+    font-weight: 900;
+    font-size: 48px;
+    color: var(--primary-text-color);
+    margin-bottom: 14px;
+}
+
+.section_heading p{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--secondary-text-color);
+}
+
+
+/* all 'button' style */
+.button_btn{
+    display: inline-block;
+}
+
+.button_btn button{
+    background-color: var(--highlight-color);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 16px 46px;
+    margin-top: 50px;
+    border: 2px solid var(--highlight-color);
+    border-radius: 42px;
+    -webkit-border-radius: 42px;
+    -moz-border-radius: 42px;
+    -ms-border-radius: 42px;
+    -o-border-radius: 42px;
+    cursor: pointer;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.button_btn button a{
+    color: var(--primary-text-color);
+}
+
+.button_btn button:hover{
+    background-color: transparent;
+    border: 2px solid var(--secondary-text-color);
+}
+/* ====================================================
+                'ALL COMMON CSS' PART END
+ ==================================================== */
+
+
+
+/* ====================================================
+                    'NAVBAR' PART START
+ ==================================================== */
+#navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#navbar .navbar_main{
+    margin-top: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .navbar_main .navbar_logo a{
+    font-weight: 800;
+    font-style: italic;
+    font-size: 36px;
+    color: var(--highlight-color);
+}
+
+#navbar .navbar_main .navbar_menu ul{
+    border: 1px solid var(--fourth-text-color);
+    padding: 5px 0px;
+    border-radius: 46px;
+    -webkit-border-radius: 46px;
+    -moz-border-radius: 46px;
+    -ms-border-radius: 46px;
+    -o-border-radius: 46px;
+}
+
+#navbar .navbar_main .navbar_menu ul li a{
+    width: 92px;
+    padding: 8px 20px;
+    margin: 0px 5px;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--primary-text-color);
+    text-align: center;
+    border-radius: 46px;
+    -webkit-border-radius: 46px;
+    -moz-border-radius: 46px;
+    -ms-border-radius: 46px;
+    -o-border-radius: 46px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+#navbar .navbar_main .navbar_menu ul li:hover a{
+    background-color: var(--highlight-color);
+    font-weight: 600;
+}
+
+#navbar .navbar_main .navbar_hambarger{
+    display: none;
+}
+
+#navbar .navbar_main .navbar_hambarger a{
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--primary-text-color);
+}
+/* ====================================================
+                    'NAVBAR' PART END
+ ==================================================== */
+
+
+/* ====================================================
+                    'BANNER' PART START
+ ==================================================== */
+#banner{
+    padding-top: 170px;
+    background: var(--banner-background);
+}
+
+#banner .banner_main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+
+#banner .banner_main .banner_titles h1{
+    font-weight: 800;
+    font-size: 78px;
+    color: var(--primary-text-color);
+}
+
+#banner .banner_main .banner_titles span{
+    font-weight: 400;
+    font-size: 78px;
+    font-style: italic;
+    color: var(--primary-text-color);
+    font-family: var(--secondary-text);
+    line-height: 20px;
+}
+
+#banner .banner_main .banner_titles p{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--third-text-color);
+    margin: 28px 0px;
+}
+
+#banner .banner_main .banner_titles .button_btn{
+    margin-top: -50px;
+}
+
+#banner .banner_main .banner_titles .button_btn:last-child{
+    margin-left: 20px;
+}
+
+#banner .banner_main .banner_titles .button_btn:last-child button{
+    background-color: transparent;
+    border: 2px solid var(--secondary-text-color);
+}
+
+#banner .banner_main .banner_titles .button_btn:last-child button:hover{
+    background-color: var(--highlight-color);
+    border: 2px solid var(--highlight-color);;
+}
+
+#banner .banner_main .banner_tutorial{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    stroke: var(--fourth-text-color);
+    background-color: var(--third-background-color);
+    border: 1px solid var(--fourth-text-color);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    position: absolute;
+    bottom: 10%;
+    left: 53%;
+}
+
+#banner .banner_main .banner_tutorial .circle{
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    background-color: var(--highlight-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#banner .banner_main .banner_tutorial .title h6{
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--fifth-text-color);
+}
+
+#banner .banner_main .banner_tutorial .title p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--sixth-text-color);
+}
+
+#banner .banner_main .banner_workouts{
+    padding: 17px 24px;
+    stroke: var(--fourth-text-color);
+    background-color: var(--third-text-color);
+    border: 1px solid var(--fourth-text-color);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    position: absolute;
+    top: 20%;
+    right: 8%;
+}
+
+#banner .banner_main .banner_workouts h6{
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--primary-text-color);
+}
+
+#banner .banner_main .banner_workouts p{
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--sixth-text-color);
+}
+/* ====================================================
+                    'BANNER' PART END
+ ==================================================== */
