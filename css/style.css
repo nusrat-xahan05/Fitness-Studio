@@ -386,3 +386,107 @@ section{
 /* ====================================================
                  'JOIN NOW' PART END
 ==================================================== */
+
+
+
+/* ====================================================
+             'TRAINING & EXCERCISE' PART START
+ ==================================================== */
+ #training .training_main .section_heading{
+    width: 50%;
+    text-align: left;
+    margin-bottom: 58px;
+    margin-left: 0px;
+}
+
+#training .training_main .training_body{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#training .training_main .training_body #row1col1{
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    background-color: rgb(6, 255, 209);
+}
+
+#training .training_main .training_body #row1col2{
+    grid-column: 4 / span 6;
+    grid-row: 1;
+    background-color: #FF0000;
+}
+
+#training .training_main .training_body #row1col3{
+    grid-column: 10 / span 3;
+    grid-row: 1;
+    background-color: #000000;
+}
+
+#training .training_main .training_body #row2col1{
+    grid-column: 1 / span 5;
+    grid-row: 2;
+    background-color: #000000;
+}
+
+#training .training_main .training_body #row2col2{
+    grid-column: 6 / span 3;
+    grid-row: 2;
+    background-color: #42FF00;
+}
+
+#training .training_main .training_body #row2col3{
+    grid-column: 9 / span 4;
+    grid-row: 2;
+    background-color: #0047FF;
+}
+
+#training .training_main .training_body .item{
+    position: relative;
+    overflow: hidden;
+}
+
+#training .training_main .training_body .item .img{
+    height: 216px;
+}
+
+#training .training_main .training_body .item .img img{
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+
+    transition: transform 0.5s, opacity .5s;
+    -webkit-transition: transform 0.5s, opacity .5s;
+    -moz-transition: transform 0.5s, opacity .5s;
+    -ms-transition: transform 0.5s, opacity .5s;
+    -o-transition: transform 0.5s, opacity .5s;
+}
+
+#training .training_main .training_body .item .title{
+    position: absolute;
+    content: '';
+    bottom: 20px;
+    left: 25px;
+}
+
+#training .training_main .training_body .item .title p{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--primary-text-color);
+}
+
+#training .training_main .training_body .item .img:hover img{
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+/* ====================================================
+             'TRAINING & EXCERCISE' PART END
+ ==================================================== */
