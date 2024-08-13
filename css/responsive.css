@@ -131,6 +131,11 @@
     }
 
 /* ================ TEAM PART ================*/
+    #membership .membership_main .membership_body{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+/* ================ TEAM PART ================*/
     #team .team_main .team_body{
         grid-template-columns: repeat(1, 1fr);
     }

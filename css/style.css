@@ -604,10 +604,9 @@ section{
                 'MEMBERSHIP' PART START
  ==================================================== */
 #membership .membership_main .membership_body{
-    /* margin-top: 48px; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 40px;
 }
 
 #membership .membership_main .membership_body .membership_body_item{
