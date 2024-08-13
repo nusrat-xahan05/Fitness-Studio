@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 ul, li{
@@ -553,18 +554,30 @@ section{
     width: 55%;
 }
 
-#bmi_body .bmi_main .bmi_calculation_form .calculation_form form{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+#bmi_body .bmi_main .bmi_calculation_form .calculation_form .user_info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-#bmi_body .bmi_main .bmi_calculation_form .calculation_form form #last_item{
-    grid-column: 1 / span 2;
-    grid-row: 3;
+#bmi_body .bmi_main .bmi_calculation_form .calculation_form .user_info .user_box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-bottom: 12px;
 }
 
-#bmi_body .bmi_main .bmi_calculation_form .calculation_form form input{
+#bmi_body .bmi_main .bmi_calculation_form .calculation_form .user_info .user_box:nth-child(2n){
+    justify-content: end;
+}
+
+#bmi_body .bmi_main .bmi_calculation_form .calculation_form .user_info .user_box:last-child{
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+#bmi_body .bmi_main .bmi_calculation_form .calculation_form form .user_info .user_box input{
+    width: 98%;
     font-size: 16px;
     font-weight: 400;
     background-color: rgba(255, 255, 255, 0.1);
@@ -577,11 +590,12 @@ section{
     -o-border-radius: 8px;
 }
 
-#bmi_body .bmi_main .bmi_calculation_form .calculation_form form input::placeholder{
+#bmi_body .bmi_main .bmi_calculation_form .calculation_form .user_info .user_box input::placeholder{
     color: rgba(255, 255, 255, .6);
 }
 
-#bmi_body .bmi_main .bmi_calculation_form .calculation_form form select{
+#bmi_body .bmi_main .bmi_calculation_form .calculation_form .user_info .user_box select{
+    width: 98%;
     font-size: 16px;
     font-weight: 400;
     color: rgba(255, 255, 255, .6);
@@ -594,6 +608,10 @@ section{
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+}
+
+#bmi_body .bmi_main .bmi_calculation_form .calculation_form .user_info .user_box:last-child select{
+    width: 100%;
 }
 /* ====================================================
                 'BMI CALCULATOR' PART END

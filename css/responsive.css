@@ -122,23 +122,13 @@
         margin-bottom: 30px;
     }
 
+    #bmi_body .bmi_main .bmi_calculation_form{
+        width: 100%;
+    }
+
     #bmi_body .bmi_main .bmi_chart table{
         width: 85%;
     }
-
-    #bmi_body .bmi_main .bmi_calculation_form{
-        width: 100%;
-        overflow: hidden;
-    }
-
-       #bmi_body .bmi_main .bmi_calculation_form .calculation_form form input{
-        width: 84%;
-    }
-
-    #bmi_body .bmi_main .bmi_calculation_form .calculation_form form select{
-        width: 100%;
-    }
-
 
 /* ================ TEAM PART ================*/
     #membership .membership_main .membership_body{
