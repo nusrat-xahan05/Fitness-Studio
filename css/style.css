@@ -601,6 +601,111 @@ section{
 
 
 /* ====================================================
+                'MEMBERSHIP' PART START
+ ==================================================== */
+#membership .membership_main .membership_body{
+    /* margin-top: 48px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+#membership .membership_main .membership_body .membership_body_item{
+    text-align: center;
+    background-color: var(--secondary-text-color);
+}
+
+#membership .membership_main .membership_body .membership_body_item .mem_items_header{
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+
+
+#membership .membership_main .membership_body .membership_body_item .mem_items_header h5{
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--primary-text-color);
+    padding: 20px 0px;
+    text-transform: uppercase;
+}
+
+#membership .membership_main .membership_body .membership_body_item .mem_items_img{
+    padding: 35px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+#membership .membership_main .membership_body .membership_body_item .mem_items_img::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#membership .membership_main .membership_body .membership_body_item .mem_items_img h4{
+    font-weight: 400;
+    font-size: 21px;
+    color: var(--primary-text-color);
+}
+
+#membership .membership_main .membership_body .membership_body_item .mem_items_img span{
+    font-size: 40px;
+}
+
+#membership .membership_main .membership_body .membership_body_item .mem_items_body{
+    padding: 20px 0px;
+    background-color: var(--secondary-background-color);
+}
+
+#membership .membership_main .membership_body .membership_body_item .mem_items_body p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-text-color);
+    padding: 10px 0px;
+}
+
+#membership .membership_main .membership_body .membership_body_item .mem_items_footer{
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+
+#membership .membership_main .membership_body .membership_body_item .mem_items_footer a{
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 0px;
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+}
+
+
+#membership .membership_main .membership_body .membership_body_item.active .mem_items_header, #membership .membership_main .membership_body .membership_body_item.active .mem_items_footer{
+    background-color: var(--highlight-color);
+}
+
+#membership .membership_main .membership_body .membership_body_item:hover .mem_items_header{
+    background-color: var(--highlight-color);
+}
+
+#membership .membership_main .membership_body .membership_body_item:hover .mem_items_footer{
+    background-color: var(--highlight-color);
+}
+/* ====================================================
+                'MEMBERSHIP' PART END
+==================================================== */
+
+
+
+/* ====================================================
                     'TEAM' PART START
  ==================================================== */
  #team .team_main .team_body{
